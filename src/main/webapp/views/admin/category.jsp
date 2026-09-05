@@ -70,14 +70,14 @@
     <div class="logo-area"><img src="${pageContext.request.contextPath}/images/catfein_logo.png" alt="Logo"></div>
     <ul class="nav-menu">
         <li class="menu-label">Tổng quan</li>
-        <li><a href="${pageContext.request.contextPath}/admin/dashboard">📊 Dashboard</a></li>
+        <li><a href="${pageContext.request.contextPath}/admin/dashboard">Dashboard</a></li>
         <li class="menu-label">Kho Cửa Hàng</li>
-        <li><a href="${pageContext.request.contextPath}/admin/category/list" class="active">📁 Quản lý Danh mục</a></li>
-        <li><a href="${pageContext.request.contextPath}/admin/product/list">🏷️ Quản lý Sản phẩm</a></li>
+        <li><a href="${pageContext.request.contextPath}/admin/category/list" class="active">Quản lý Danh mục</a></li>
+        <li><a href="${pageContext.request.contextPath}/admin/product/list">Quản lý Sản phẩm</a></li>
         <li class="menu-label">Hệ thống</li>
-        <li><a href="${pageContext.request.contextPath}/admin/user/list">👥 Tài khoản</a></li>
+        <li><a href="${pageContext.request.contextPath}/admin/user/list">Tài khoản</a></li>
     </ul>
-    <div class="sidebar-footer"><a href="${pageContext.request.contextPath}/logout">🚪 Đăng xuất</a></div>
+    <div class="sidebar-footer"><a href="${pageContext.request.contextPath}/logout">Đăng xuất</a></div>
 </div>
 
 <div class="main-content">
@@ -86,10 +86,9 @@
     </div>
 
     <div class="grid-layout">
-        <!-- CỘT 1: FORM THÊM / SỬA -->
         <div class="form-section">
             <div class="section-title">
-                ${not empty category ? '🛠️ Chỉnh Sửa Danh Mục' : '✨ Thêm Danh Mục Mới'}
+                ${not empty category ? 'Chỉnh Sửa Danh Mục' : 'Thêm Danh Mục Mới'}
             </div>
             
             <form action="${pageContext.request.contextPath}/admin/category/${not empty category ? 'edit' : 'add'}" method="post" enctype="multipart/form-data">
@@ -122,7 +121,6 @@
             </form>
         </div>
 
-        <!-- CỘT 2: DANH SÁCH -->
         <div class="table-section">
             <div class="section-title" style="color: var(--text-main); border: none; padding: 0;">Danh sách dữ liệu</div>
             <table>
