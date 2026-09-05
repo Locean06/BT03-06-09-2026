@@ -1,0 +1,10 @@
+CREATE DATABASE ServletCRUDMVC
+
+SELECT @@SERVICENAME;
+
+SELECT 
+    @@SERVERNAME AS 'Ten_May_Chu', 
+    SERVERPROPERTY('InstanceName') AS 'Ten_Instance',
+    @@SERVICENAME AS 'Ten_Dich_Vu';
+
+SELECT * FROM ;
